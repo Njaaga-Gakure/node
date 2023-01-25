@@ -13,7 +13,7 @@ const getText = (path) => {
     })
 } 
 
-const start = async () => {
+const start =  async () => {
     try {
             const first = await getText('./folder/first.txt')
             const second = await getText('./folder/second.txt')
@@ -22,6 +22,5 @@ const start = async () => {
         console.log(err)
     }
 }
-
 start()
 // getText('./folder/first.txt').then(data => console.log(data)).catch(err => console.log(err))
